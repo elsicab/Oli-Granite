@@ -1,0 +1,456 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: 'Zilla Slab', serif;
+    padding-bottom: 95px;
+    height: 100%;
+
+}
+
+#contact-us {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.navbar{
+    background: black; 
+    height: 100px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    max-width: 100%;
+    opacity: 0.9;
+
+
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    
+    
+}
+
+#navbar-logo {
+    background-color: white;
+    background-image: linear-gradient(to top, #f2f2f2 20%, #ada996 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2.2rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 15px;
+  
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar-item {
+    height: 80px;
+}
+
+.navbar-links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease;
+
+}
+
+.navbar-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+#contact-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.navbar-links:hover {
+    color: #689bca;
+    transition: all 0.3s ease;
+}
+
+#container{
+    min-height: 100%;
+}
+
+footer{
+
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    background: black;
+    color:rgba(255, 255, 255, 0.904);
+    height: auto;
+    font-size: 12px;
+    opacity: 0.9;
+    
+
+    
+
+}
+
+footer .footer-logo{
+    background-color: white;
+    background-image: linear-gradient(to top, #f2f2f2 20%, #ada996 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 26px;
+}
+
+footer li{
+    list-style: none;
+    justify-content: center;
+    margin-right: 15%;
+}
+
+
+.navbar_toggle{
+    color: white;
+    font-size: 30px;
+    opacity: 0.8;
+    align-self: flex-end;
+    display: initial;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+} 
+
+
+@media screen and (max-width: 1241px){
+    #navbar-logo {
+        font-size: 2rem;
+    }
+
+}
+ 
+@media screen and (max-width: 1207px){
+    #navbar-logo {
+        font-size: 1.4rem;
+    }
+    .navbar{
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 1072px){
+    #navbar-logo {
+        font-size: 1.4rem;
+    }
+    .navbar{
+        font-size: .9rem;
+    }
+
+}
+
+
+@media screen and (max-width: 974px){
+    #navbar-logo {
+        font-size: 1.7rem;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .navbar{
+        font-size: .9rem;
+        height: 140px;
+    }
+
+    .navbar-container{
+        flex-direction: column;
+        max-width: 2000px;
+        
+    }    
+
+
+    .navbar-btn{
+        padding-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin-right: 20px;
+        margin-left: 12%;
+
+    }
+
+}
+
+@media screen and (max-width: 828px){
+    #navbar-logo {
+        font-size: 1.7rem;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 766px){
+
+    .navbar{
+        width: 100%;
+    }
+
+    .navbar__container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+      }
+
+    #navbar-logo{
+        display: inline-block;
+        font-size: 22px;
+        margin-top: 10px;
+        margin-left: 20px;
+        padding-top: 10px;
+        max-width: 50%;
+    }
+
+    .navbar{
+        height: 60px;
+        width: 100%;
+        display: flex;
+        
+    }
+    
+
+    .navbar-links{
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+        
+
+    }
+    
+   
+    
+    .navbar-menu{
+        /*flex-direction: column; */
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        position: absolute;
+        top: -1000px;
+        z-index: -1;
+        width: 100%;
+        
+        
+        
+    }
+
+    .navbar-menu.active{
+        background: black;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        font-size: 1.2rem;
+        opacity: 0.8;
+        width: 100%;
+        
+    
+     
+
+    }
+    .navbar-item{
+        width: 100%;
+    }
+    
+    .navbar-btn{
+        padding-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+
+    }
+    
+    #contact-us{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 60px;
+        margin: 0;
+        
+    }
+
+    .navbar__toggle .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #fff;
+      }
+
+    #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+        opacity: 0.8;
+      }
+    
+      .navbar__toggle .bar {
+        display: block;
+        cursor: pointer;
+      }
+    
+      #mobile-menu.is-active .bar:nth-child(1) {
+        opacity: 0;
+      }
+
+      #mobile-menu.is-active .bar:nth-child(3) {
+        opacity: 0;
+      }
+    }
+
+    @media screen and (max-width: 704px){
+        
+        .general-info{
+            flex-direction: column;
+           
+        }
+        
+        .general-info p{
+            margin-top: 5px;
+            font-size: 13px;
+        }
+    
+    }
+
+    @media screen and (max-width: 653px){
+        
+        .general-info{
+            flex-direction: column;
+           
+        }
+        
+        .general-info p{
+            margin-top: 5px;
+            font-size: 12px;
+        }
+    
+    }
+
+    @media screen and (max-width: 540px){
+        #navbar-logo {
+            font-size: 1.2rem;
+           
+           
+            /*padding-bottom: 5px;*/
+        }
+    
+    
+    }
+
+    @media screen and (max-width: 482px){
+        #navbar-logo {
+            font-size: 1.1rem;
+        }
+    
+    
+    }
+
+    @media screen and (max-width: 450px){
+        #navbar-logo {
+            font-size: 1rem;
+        }
+    
+    
+    }
+
+    @media screen and (max-width: 418px){
+        #navbar-logo {
+            font-size: .9rem;
+        }
+    
+    
+    }
+
+   
+
+    @media screen and (max-width: 290px){
+        #navbar-logo {
+            padding-top: 5px;
+            padding-bottom: 10px;
+            
+        }
+    
+    
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
