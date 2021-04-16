@@ -1,204 +1,186 @@
-body{
-    font-family: 'Zilla Slab', serif;
+body {
+  font-family: "Zilla Slab", serif;
 }
 
-img{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    min-height: auto;
-    opacity: 0.75;
-    
+.main {
+  opacity: 0.95;
+}
+.banner-img img {
+  width: 100%;
+  max-height: 600px;
+  position: relative;
+  opacity: 0.75;
 }
 
-.bannerText{
-    position: absolute;
-    top: 30%;
-    text-align: center;
-    left: 25%;
-    right: 25%;
+.bannerText {
+  position: absolute;
+  top: 10%;
+  text-align: center;
+  left: 25%;
+  right: 25%;
 }
 
-h2{
-    color: rgb(19, 18, 18);
-    font-size: 65px;
-    margin: 0;
-    font-weight: 500;
-    
+.city-list {
+  padding-top: 15px;
+  text-align: center;
 }
 
-.bannerText p{
-    color: rgb(53, 53, 53);
-    font-size: 22px;
-    font-weight: bold;
-    margin: 0;
+.mid-text {
+  text-align: center;
 }
 
-.btn{
-    display: inline-block;
-    margin-top: 5%;
-    background: transparent;
-    border: 0;
+#right-image {
+  opacity: 0.9;
+}
+
+.banner h2 {
+  color: rgb(19, 18, 18);
+  font-size: 30px;
+  margin: 0;
+  font-weight: 500;
+  margin-top: 20%;
+}
+
+.city-list li {
+  list-style: none;
+}
+
+.bannerText p {
+  color: rgb(53, 53, 53);
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.estimate-btn {
+  display: inline-block;
+  margin-top: 5%;
+  background: transparent;
+  border: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 1px solid black;
+  padding: 10px 25px;
+  color: black;
+  border-radius: 25px;
+  font-weight: bold;
+  background-color: white;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1110px) {
+  .bannerText p {
     font-size: 20px;
+  }
+  .estimate-btn {
+    font-size: 18px;
     text-transform: uppercase;
-    border: 1px solid black;
+    border: 3px solid grey;
     padding: 10px 25px;
-    color: black;
-    border-radius: 25px;
-    font-weight: bold;
-    background-color: white;
-    opacity: 0.5;
-
+  }
 }
 
-@media screen and (max-width: 1110px){
-    h2{
-        font-size: 60px;
-    }
+@media screen and (max-width: 950px) {
+  .banner h2 {
+    font-size: 28px;
+    margin-top: 30%;
+  }
 
-    .bannerText p{
-        font-size: 20px;
-    }
-    .btn{
-        font-size: 18px;
-        text-transform: uppercase;
-        border: 3px solid grey;
-        padding: 10px 25px;
-    }
-
+  .estimate-btn {
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 3px solid grey;
+    padding: 10px 25px;
+  }
 }
 
-@media screen and (max-width: 950px){
-    h2{
-        font-size: 55px;
-        font-weight: lighter;
-    }
-
-    .bannerText p{
-        font-size: 20px;
-    }
-    .btn{
-        font-size: 18px;
-        text-transform: uppercase;
-        border: 3px solid grey;
-        padding: 10px 25px;
-    }
-
+@media screen and (max-width: 765px) {
+  .bannerText {
+    top: 5%;
+  }
 }
 
-@media screen and (max-width: 765px){
-    .bannerText{
-        top: 20%;
-    }
- 
- }
+@media screen and (max-width: 640px) {
+  .bannerText h2 {
+    font-size: 20px;
+  }
 
-@media screen and (max-width: 640px){
-   
-    h2{
-        font-size: 55px;
-    }
+  .bannerText p {
+    font-size: 16px;
+  }
+  .estimate-btn {
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 3px solid grey;
+    padding: 10px 25px;
+  }
 
-    .bannerText p{
-        font-size: 18px;
-    }
-    .btn{
-        font-size: 16px;
-        text-transform: uppercase;
-        border: 3px solid grey;
-        padding: 10px 25px;
-    }
+  .city-list h5,
+  .mid-text h5 {
+    font-size: 16px;
+  }
 
-
+  .city-list li,
+  .mid-text p {
+    font-size: 14px;
+  }
 }
 
-@media screen and (max-width: 560px){
-   
-    h2{
-        font-size: 50px;
-    }
-
+@media screen and (max-width: 560px) {
+  .bannerText h2 {
+    font-size: 18px;
+  }
+  .bannerText p {
+    font-size: 14px;
+  }
 }
 
-@media screen and (max-width: 454px){
-   
-    h2{
-        font-size: 40px;
-    }
+@media screen and (max-width: 454px) {
+  .bannerText h2 {
+    font-size: 16px;
+  }
 
-    .btn{
-        font-size: 15px;
-        text-transform: uppercase;
-        border: 2px solid grey;
-        padding: 8px 20px;
-    }
-
-    .bannerText{
-        position: absolute;
-        top: 25%;
-        text-align: center;
-        left: 20%;
-        right: 20%;
-    }
-
-
+  .estimate-btn {
+    font-size: 12px;
+    text-transform: uppercase;
+    border: 2px solid grey;
+    padding: 8px 20px;
+  }
 }
 
-@media screen and (max-width: 375px){
-   
-  
-    .bannerText{
-        top: 20%;
-       
-    }
+@media screen and (max-width: 370px) {
+  .banner h2 {
+    font-size: 16px;
+  }
+  .bannerText p {
+    font-size: 12px;
+  }
 
-
+  .estimate-btn {
+    font-size: 12px;
+    border: 1px solid grey;
+    padding: 8px 20px;
+  }
 }
 
-@media screen and (max-width: 370px){
-   
-    h2{
-        font-size: 30px;
-    }
+@media screen and (max-width: 320px) {
+  .banner h2 {
+    font-size: 14px;
+  }
+  .bannerText p {
+    font-size: 10px;
+  }
 
-    .btn{
-        font-size: 12px;
-        border: 1px solid grey;
-        padding: 8px 20px;
-    }
+  .estimate-btn {
+    font-size: 10px;
+  }
+  .city-list h5,
+  .mid-text h5 {
+    font-size: 14px;
+  }
 
-    .bannerText{
-        top: 20%;
-        text-align: center;
-        left: 15%;
-        right: 15%;
-    }
-
-
-}
-
-
-
-@media screen and (max-width: 360px){
-   
-  
-    .bannerText{
-        top: 30%;
-       
-    }
-
-
-}
-
-@media screen and (max-width: 320px){
-   
-  
-    .bannerText{
-        top: 20%;
-       
-    }
-
-
+  .city-list li,
+  .mid-text p {
+    font-size: 10px;
+  }
 }
